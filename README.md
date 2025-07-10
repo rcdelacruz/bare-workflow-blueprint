@@ -1,39 +1,40 @@
 # The Bare Workflow Blueprint: A 10-Week React Native Program
 
-🚀 **Transform into a Professional Mobile Developer with Full Native Control**
+🚀 **Transform into a Professional Mobile Developer with Expo DX + Community Module Freedom**
 
-This comprehensive 10-week training program is designed to transform participants into proficient, professional-grade mobile developers using React Native's **Bare Workflow**. Unlike managed workflows, this approach emphasizes direct interaction with native projects (iOS and Android) from day one, providing maximum flexibility and deep understanding of the entire mobile development stack.
+This comprehensive 10-week training program teaches you to build professional React Native apps using the **Expo Hybrid Approach** - combining Expo's incredible developer experience with community modules to avoid vendor lock-in.
 
-## 🎯 Why Bare Workflow?
+## 🎯 Why the Expo Hybrid Approach?
 
-- **🔧 Full Native Control**: Direct access to Xcode and Android Studio configurations
-- **📱 Real-World Skills**: Industry-standard practices used by professional teams
-- **🌟 Expo DX Benefits**: Keep the great developer experience without vendor lock-in
-- **🚀 Career Ready**: Build skills that translate directly to professional mobile development
+- **🔧 Best Developer Experience**: Expo's amazing tooling - fast refresh, easy debugging, cloud builds
+- **📱 Community Module Freedom**: Use industry-standard libraries, not proprietary ones
+- **🌟 No Vendor Lock-in**: Skills transfer to any React Native setup
+- **🚀 Career Ready**: What professional teams actually use in production
 
-## 🎓 Program Overview
+## 🎓 The Hybrid Philosophy
 
-### Core Philosophy
-- **Pragmatic Learning**: Theory immediately applied to practice
-- **Professional Workflow**: Mirror modern agile software teams
-- **Continuous Growth**: Cultivate lifelong learning mindset
+### What We Keep from Expo ✅
+- **Amazing DX** - Fast refresh, hot reload, great debugging
+- **Expo CLI** - Best-in-class development server
+- **EAS Build** - Cloud builds for both platforms  
+- **Easy device testing** - Scan QR code with Expo Go
+- **Great tooling** - Flipper integration, network inspector
 
-### Learning Outcomes
-By completion, participants will be able to:
-- ✅ Architect and build cross-platform mobile applications
-- ✅ Manage native project configurations in Xcode & Android Studio
-- ✅ Implement secure authentication systems
-- ✅ Handle complex data and state management
-- ✅ Collaborate effectively using agile methodologies
-- ✅ Write and test professional-grade code
-- ✅ Deploy applications to App Store and Google Play
+### What We Use Instead ⚡
+| Instead of Expo | We Use Community | Why Better |
+|----------------|------------------|------------|
+| `expo-camera` | `react-native-vision-camera` | More features, better performance |
+| `expo-notifications` | `@react-native-firebase/messaging` | More reliable, customizable |
+| `expo-location` | `react-native-geolocation-service` | Better background support |
+| `expo-sqlite` | `react-native-sqlite-storage` | More SQL features |
+| `expo-secure-store` | `react-native-keychain` | Industry standard |
 
 ## 📅 10-Week Timeline
 
 | Week | Phase | Focus | Key Deliverable |
 |------|-------|-------|----------------|
-| **1** | Foundations | React Native & Native Setup | App running on iOS/Android simulators |
-| **2** | Foundations | Full-Stack & Native Modules | To-Do app with native dependencies |
+| **1** | Hybrid Setup | Expo DX + Community Modules | Profile app with hybrid approach |
+| **2** | Full-Stack | Firebase + Community Libraries | To-Do app with real backend |
 | **3-4** | Capstone Build | Architecture & Auth | Authenticated flight search |
 | **5-6** | Capstone Build | Core Features & State | Full booking functionality |
 | **7-8** | Polish & Deploy | Advanced Features | Maps & notifications |
@@ -43,53 +44,72 @@ By completion, participants will be able to:
 
 ```
 bare-workflow-blueprint/
-├── 📁 week-01/          # React Native & Native Environment
-├── 📁 week-02/          # Full-Stack & Native Modules  
-├── 📁 week-03-04/       # Capstone: Architecture & Auth
-├── 📁 week-05-06/       # Capstone: Core Features
-├── 📁 week-07-08/       # Advanced Features & Polish
-├── 📁 week-09-10/       # Testing & Store Deployment
+├── 📁 week-01-hybrid/    # Expo Hybrid Setup & Fundamentals
+├── 📁 week-02-hybrid/    # Full-Stack with Community Modules  
+├── 📁 week-03-04/        # Capstone: Architecture & Auth
+├── 📁 week-05-06/        # Capstone: Core Features
+├── 📁 week-07-08/        # Advanced Features & Polish
+├── 📁 week-09-10/        # Testing & Store Deployment
 ├── 📁 capstone-projects/ # Sample project templates
-├── 📁 resources/        # Tools, guides, and references
-└── 📁 docs/            # Detailed documentation
+├── 📁 resources/         # Tools, guides, and references
+├── 📁 docs/             # Detailed documentation
+└── 📄 docs/expo-hybrid-approach.md # Core philosophy
 ```
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- **Node.js** (LTS version)
-- **Git** for version control
-- **Xcode** (macOS only) for iOS development
-- **Android Studio** for Android development
-- **VS Code** as primary IDE
+### Setup Your First Hybrid Project
+```bash
+# Option 1: Start with bare minimum (recommended)
+npx create-expo-app MyApp --template bare-minimum
 
-### Getting Started
-1. Clone this repository
-2. Follow the week-by-week guides
-3. Complete hands-on projects
-4. Build your capstone application
+# Option 2: Start managed, add dev builds
+npx create-expo-app MyApp
+cd MyApp
+npx expo install expo-dev-client
+```
+
+### Add Community Modules
+```bash
+# Use community modules instead of Expo SDK
+npm install @react-native-async-storage/async-storage
+npm install react-native-vector-icons
+npm install react-native-maps
+npm install @react-native-firebase/app
+```
+
+### Enjoy Expo DX
+```bash
+# Amazing development experience
+npx expo start
+
+# Run with native modules
+npx expo run:ios
+npx expo run:android
+```
 
 ## 📚 What Makes This Different?
 
-Unlike other React Native tutorials that rely heavily on Expo's managed workflow, this program:
+Unlike other React Native tutorials, this program:
 
-- **Starts with `react-native init`** - No managed Expo dependencies
-- **Teaches native configuration** - Manual setup of permissions, certificates, and native modules
-- **Uses community libraries** - react-native-vision-camera, react-native-maps, etc.
-- **Covers real deployment** - Manual build, signing, and store submission
-- **Focuses on collaboration** - Git workflows, code reviews, agile practices
+- **Starts with Expo Hybrid** - Best DX without vendor lock-in
+- **Uses community modules** - Industry-standard libraries from day one
+- **Teaches migration paths** - How to move between different setups
+- **Focuses on real skills** - What you'll actually use professionally
+- **Covers team workflows** - Git, code reviews, agile practices
 
-## 🎯 Target Projects
+## 🎯 Training Projects
 
-The program includes several project archetypes that teach different aspects:
+### Foundation Projects
+- **📱 Personal Profile App** (Week 1) - Hybrid setup fundamentals
+- **✅ Full-Stack To-Do App** (Week 2) - Community modules + backend
 
-- **📱 Personal Profile App** (Week 1)
-- **✅ Full-Stack To-Do App** (Week 2)  
-- **✈️ Airline Booking App** (Capstone - Weeks 3-10)
+### Capstone Project
+- **✈️ Airline Booking App** (Weeks 3-10) - Production-ready application
 
-Additional project templates:
+### Additional Templates
 - 🎪 Event Discovery & Ticketing
-- 🍳 Recipe & Meal Planning
+- 🍳 Recipe & Meal Planning  
 - 📚 Language Learning Flashcards
 - 🛒 E-commerce Marketplace
 - 🏃 Fitness & Workout Tracker
@@ -98,45 +118,61 @@ Additional project templates:
 
 ## 🛠️ Tech Stack
 
-### Core Technologies
-- **React Native** (Bare Workflow)
+### Core Setup
+- **Expo CLI** for amazing developer experience
+- **Community Modules** for all core functionality
 - **TypeScript** for type safety
+- **EAS Build** for cloud builds (optional)
+
+### State & Backend
 - **Zustand** for state management
-- **Firebase/Supabase** for backend services
+- **Firebase/Supabase** with community SDKs
+- **React Navigation** for navigation
+- **React Query** for data fetching
 
-### Development Tools
-- **Xcode** & **Android Studio**
-- **VS Code** with React Native extensions
-- **GitHub** for version control
-- **Jest** & **React Native Testing Library**
-
-### Native Integrations
-- **react-native-maps** for location features
-- **react-native-vision-camera** for camera functionality
-- **react-native-push-notification** for alerts
-- **react-native-gesture-handler** for advanced interactions
+### Native Features
+- **react-native-vision-camera** for camera
+- **react-native-maps** for location
+- **@react-native-firebase/messaging** for notifications
+- **react-native-gesture-handler** for interactions
 
 ## 🤝 Contributing
 
-This is an educational resource! Contributions are welcome:
+This is an educational resource! Help us improve:
 
-- 🐛 Report issues or bugs in the curriculum
-- 💡 Suggest improvements or additional projects
-- 📝 Contribute documentation or guides
+- 🐛 Report curriculum bugs or outdated information
+- 💡 Suggest better community module alternatives
+- 📝 Contribute guides or troubleshooting tips
 - 🎯 Share your completed projects
 
 ## 📄 License
 
-MIT License - Feel free to use this curriculum for educational purposes.
+MIT License - Use this curriculum for educational purposes.
 
 ## 🙋‍♂️ Support
 
-- **Issues**: Use GitHub Issues for bugs or questions
-- **Discussions**: Share experiences and get help from the community
-- **Wiki**: Additional resources and frequently asked questions
+- **Issues**: GitHub Issues for bugs or questions
+- **Discussions**: Community help and experience sharing
+- **Wiki**: Additional resources and FAQs
+
+## 🔄 Migration Paths
+
+### Want Pure React Native?
+- Remove Expo CLI dependencies
+- Replace `expo start` with `npx react-native start`
+- You're already using community modules! ✅
+
+### Want More Expo Features?
+- Add specific Expo modules you need
+- Use development builds for flexibility
+- Leverage EAS services selectively
 
 ---
 
-**Ready to become a professional React Native developer?** 
+**Ready to get the best of both worlds?** 
 
-Start with [Week 1: React Native & Native Environment](./week-01/README.md) 🚀
+Start with [Week 1: Expo Hybrid Setup](./week-01-hybrid/README.md) 🚀
+
+**Want to understand the philosophy first?** 
+
+Read [The Expo Hybrid Approach](./docs/expo-hybrid-approach.md) 🎯
